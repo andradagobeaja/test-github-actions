@@ -14,5 +14,5 @@ jobs:
           KEY: ${{ secrets.KEY }}
         with:
           source: "dest"
-          target: "/var/www/html/testcicd/test"
+          target: "/var/www/html/testcicd/"
           strip_components: 1
