@@ -15,5 +15,5 @@ jobs:
         with:
           source: "dest"
           target: "/var/www/html/testcicd/test"
-          options: --user root
+          options: --user root 
           strip_components: 1
