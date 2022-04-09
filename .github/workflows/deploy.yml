@@ -16,4 +16,4 @@ jobs:
           source: "dest"
           target: "/var/www/html/testcicd/test"
           strip_components: 1
-    permissions: read-all|write-all
+        permissions: read-all|write-all
