@@ -3,6 +3,7 @@ on: [push]
 jobs:  
   deploy:    
     runs-on: ubuntu-latest
+    options: --user root 
     steps:
       - uses: actions/checkout@master
       - name: deploy website to example.com
@@ -15,5 +16,4 @@ jobs:
         with:
           source: "dest"
           target: "/var/www/html/testcicd/test"
-          options: --user root 
           strip_components: 1
