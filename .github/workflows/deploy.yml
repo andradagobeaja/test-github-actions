@@ -1,9 +1,11 @@
 name: test deployment
-on: [push]
+on:
+  push:
+      branches:
+        - 'main'
 jobs:  
   deploy:    
     runs-on: ubuntu-latest
-    permissions: read-all | write-all
     steps:
       - uses: actions/checkout@master
       - name: deploy website to example.com
